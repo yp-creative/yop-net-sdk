@@ -1,0 +1,9 @@
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\SDK\bin\Debug\SDK.dll
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\SDK\bin\Debug\SDK.pdb
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\SDK\obj\Debug\SDK.csprojResolveAssemblyReference.cache
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\SDK\obj\Debug\SDK.dll
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\SDK\obj\Debug\SDK.pdb
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\SDK\bin\Debug\Newtonsoft.Json.dll
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\SDK\bin\Debug\Newtonsoft.Json.pdb
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\SDK\bin\Debug\Newtonsoft.Json.xml
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\SDK\bin\Debug\BouncyCastle.Crypto.dll

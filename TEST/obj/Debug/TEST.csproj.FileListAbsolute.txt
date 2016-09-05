@@ -1,0 +1,12 @@
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\bin\Debug\TEST.exe
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\bin\Debug\TEST.pdb
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\bin\Debug\SDK.dll
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\bin\Debug\SDK.pdb
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\obj\Debug\TEST.csprojResolveAssemblyReference.cache
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\obj\Debug\TEST.exe
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\obj\Debug\TEST.pdb
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\bin\Debug\BouncyCastle.Crypto.dll
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\bin\Debug\BlowfishNET.dll
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\bin\Debug\Newtonsoft.Json.dll
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\bin\Debug\Newtonsoft.Json.pdb
+Z:\Users\yp-bp-m-7043\work\C#\yop\yop-sdk\TEST\bin\Debug\Newtonsoft.Json.xml
