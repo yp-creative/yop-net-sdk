@@ -60,7 +60,7 @@ namespace SDK.yop.encrypt
       Assert.notNull(sign);
       if (StringUtils.isBlank(algName))
       {
-        algName = YopConstants.ALG_SHA;
+        algName = YopConstants.ALG_SHA256;
       }
       StringBuilder sb = new StringBuilder();
       sb.Append(secret);
