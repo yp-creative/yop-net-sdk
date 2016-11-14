@@ -4,9 +4,9 @@ using System.Text;
 
 namespace SDK.enums
 {
-  public enum FormatType
-  {
-    xml,
-    json
-  }
+    public enum FormatType
+    {
+        xml,
+        json
+    }
 }

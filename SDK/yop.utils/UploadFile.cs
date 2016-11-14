@@ -4,15 +4,15 @@ using System.Text;
 
 namespace SDK.yop.utils
 {
-  public class UploadFile
-  {
-    public UploadFile()
+    public class UploadFile
     {
-      ContentType = "application/octet-stream";
+        public UploadFile()
+        {
+            ContentType = "application/octet-stream";
+        }
+        public string Name { get; set; }
+        public string Filename { get; set; }
+        public string ContentType { get; set; }
+        public byte[] Data { get; set; }
     }
-    public string Name { get; set; }
-    public string Filename { get; set; }
-    public string ContentType { get; set; }
-    public byte[] Data { get; set; }
-  }
 }

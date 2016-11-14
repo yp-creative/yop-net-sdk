@@ -4,12 +4,12 @@ using System.Text;
 
 namespace SDK.yop.utils
 {
-  public class UUIDGenerator
-  {
-    public static string generate()
+    public class UUIDGenerator
     {
-      Guid guid = Guid.NewGuid();
-      return guid.ToString().Replace("-", "");
+        public static string generate()
+        {
+            Guid guid = Guid.NewGuid();
+            return guid.ToString().Replace("-", "");
+        }
     }
-  }
 }

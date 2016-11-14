@@ -4,100 +4,100 @@ using System.Text;
 
 namespace SDK.yop.client
 {
-  public class YopConstants
-  {
-    public const string CLIENT_VERSION = "2.0.0";
+    public class YopConstants
+    {
+        public const string CLIENT_VERSION = "2.0.0";
 
-    public const string ENCODING = "UTF-8";
+        public const string ENCODING = "UTF-8";
 
-    public const string SUCCESS = "SUCCESS";
+        public const string SUCCESS = "SUCCESS";
 
-    public const string CALLBACK = "callback";
- 
-    /// <summary>
-    /// 方法的默认参数名
-    /// </summary>
-    public const string METHOD = "method";
+        public const string CALLBACK = "callback";
 
-    /// <summary>
-    /// 格式化默认参数名
-    /// </summary>
-    public const string FORMAT = "format";
+        /// <summary>
+        /// 方法的默认参数名
+        /// </summary>
+        public const string METHOD = "method";
 
-    /// <summary>
-    /// 本地化默认参数名
-    /// </summary>
-    public const string LOCALE = "locale";
+        /// <summary>
+        /// 格式化默认参数名
+        /// </summary>
+        public const string FORMAT = "format";
 
-    /// <summary>
-    /// 会话id默认参数名
-    /// </summary>
-    public const string SESSION_ID = "sessionId";
+        /// <summary>
+        /// 本地化默认参数名
+        /// </summary>
+        public const string LOCALE = "locale";
 
-    /// <summary>
-    /// 应用键的默认参数名
-    /// </summary>
-    public const string APP_KEY = "appKey";
+        /// <summary>
+        /// 会话id默认参数名
+        /// </summary>
+        public const string SESSION_ID = "sessionId";
 
-    /// <summary>
-    /// 服务版本号的默认参数名
-    /// </summary>
-    public const string VERSION = "v";
+        /// <summary>
+        /// 应用键的默认参数名
+        /// </summary>
+        public const string APP_KEY = "appKey";
 
-    /// <summary>
-    /// 签名的默认参数名
-    /// </summary>
-    public const string SIGN = "sign";
+        /// <summary>
+        /// 服务版本号的默认参数名
+        /// </summary>
+        public const string VERSION = "v";
 
-    /// <summary>
-    /// 返回结果是否签名
-    /// </summary>
-    public const string SIGN_RETURN = "signRet";
+        /// <summary>
+        /// 签名的默认参数名
+        /// </summary>
+        public const string SIGN = "sign";
 
-    /// <summary>
-    /// 商户编号
-    /// </summary>
-    public const string CUSTOMER_NO = "customerNo";
+        /// <summary>
+        /// 返回结果是否签名
+        /// </summary>
+        public const string SIGN_RETURN = "signRet";
 
-    /// <summary>
-    /// 加密报文key
-    /// </summary>
-    public const string ENCRYPT = "encrypt";
+        /// <summary>
+        /// 商户编号
+        /// </summary>
+        public const string CUSTOMER_NO = "customerNo";
 
-    /// <summary>
-    /// 时间戳
-    /// </summary>
-    public const string TIMESTAMP = "ts";
+        /// <summary>
+        /// 加密报文key
+        /// </summary>
+        public const string ENCRYPT = "encrypt";
 
-    /// <summary>
-    /// 保护参数
-    /// </summary>
-    public static readonly string[] PROTECTED_KEY = { APP_KEY, VERSION, SIGN,
+        /// <summary>
+        /// 时间戳
+        /// </summary>
+        public const string TIMESTAMP = "ts";
+
+        /// <summary>
+        /// 保护参数
+        /// </summary>
+        public static readonly string[] PROTECTED_KEY = { APP_KEY, VERSION, SIGN,
         METHOD, FORMAT, LOCALE, SESSION_ID, CUSTOMER_NO, ENCRYPT,
         SIGN_RETURN, TIMESTAMP
     };
 
-    public const string ALG_MD5 = "MD5";
-    public const string ALG_AES = "AES";
-    public const string ALG_SHA = "SHA";
-    public const string ALG_SHA1 = "SHA1";
-    public const string ALG_SHA256 = "SHA-256";
+        public const string ALG_MD5 = "MD5";
+        public const string ALG_AES = "AES";
+        public const string ALG_SHA = "SHA";
+        public const string ALG_SHA1 = "SHA1";
+        public const string ALG_SHA256 = "SHA-256";
 
-    /// <summary>
-    /// 判断是否为保护参数
-    /// </summary>
-    /// <param name="key"></param>
-    /// <returns></returns>
-    public static bool isProtectedKey(string key)
-    {
-      foreach (string k in YopConstants.PROTECTED_KEY)
-      {
-        if (k.Equals(key))
+        /// <summary>
+        /// 判断是否为保护参数
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public static bool isProtectedKey(string key)
         {
-          return true;
+            foreach (string k in YopConstants.PROTECTED_KEY)
+            {
+                if (k.Equals(key))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
-      }
-      return false;
     }
-  }
 }

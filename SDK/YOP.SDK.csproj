@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0C4F97E-5856-435C-8762-1AE7E32B04EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDK</RootNamespace>
+    <AssemblyName>YOP.SDK</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\dlls\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="common\StringUtils.cs" />
+    <Compile Include="common\TimeStamp.cs" />
+    <Compile Include="enums\FormatType.cs" />
+    <Compile Include="enums\HttpMethodType.cs" />
+    <Compile Include="error\YopError.cs" />
+    <Compile Include="error\YopSubError.cs" />
+    <Compile Include="Model\Accounting\AccountingType.cs" />
+    <Compile Include="Model\Accounting\QueryFee.cs" />
+    <Compile Include="Model\Accounting\QueryFeeResult.cs" />
+    <Compile Include="Model\Divide\DivideInfo.cs" />
+    <Compile Include="Model\Divide\DivideOrderList.cs" />
+    <Compile Include="Model\Divide\DivideQuery.cs" />
+    <Compile Include="Model\Divide\DivideQueryResult.cs" />
+    <Compile Include="Model\Divide\OrderDivide.cs" />
+    <Compile Include="Model\Divide\OrderDivideResult.cs" />
+    <Compile Include="Model\LedgerMerchant\BankAccountType.cs" />
+    <Compile Include="Model\LedgerMerchant\CustomerStyle.cs" />
+    <Compile Include="Model\LedgerMerchant\QualificationType.cs" />
+    <Compile Include="Model\LedgerMerchant\QueryMerchantBalance.cs" />
+    <Compile Include="Model\LedgerMerchant\QueryMerchantBalanceResult.cs" />
+    <Compile Include="Model\LedgerMerchant\RegisterLedgerMerchantResult.cs" />
+    <Compile Include="Model\LedgerMerchant\UploadQualifications.cs" />
+    <Compile Include="Model\LedgerMerchant\UploadQualificationsResult.cs" />
+    <Compile Include="Model\Merchant.cs" />
+    <Compile Include="Model\LedgerMerchant\RegisterLedgerMerchant.cs" />
+    <Compile Include="Model\Order\Consume.cs" />
+    <Compile Include="Model\Order\ConsumeResult.cs" />
+    <Compile Include="Model\Order\MerchantRecharge.cs" />
+    <Compile Include="Model\Order\MerchantRechargeResult.cs" />
+    <Compile Include="Model\Order\OrderQuery.cs" />
+    <Compile Include="Model\Order\OrderQueryResult.cs" />
+    <Compile Include="Model\Order\OrderState.cs" />
+    <Compile Include="Model\Order\OrderPayType.cs" />
+    <Compile Include="Model\Order\Recharge.cs" />
+    <Compile Include="Model\Order\RechargeResult.cs" />
+    <Compile Include="Model\Refund\OrderRefund.cs" />
+    <Compile Include="Model\Refund\OrderRefundResult.cs" />
+    <Compile Include="Model\Refund\OrderRefundStatus.cs" />
+    <Compile Include="Model\Refund\QueryRefundOrder.cs" />
+    <Compile Include="Model\Refund\RefundOrderList.cs" />
+    <Compile Include="Model\Refund\RefundOrderState.cs" />
+    <Compile Include="Model\Refund\RefundQuery.cs" />
+    <Compile Include="Model\Refund\RefundQueryResult.cs" />
+    <Compile Include="Model\Result.cs" />
+    <Compile Include="Model\Transfer\MerchantQuery.cs" />
+    <Compile Include="Model\Transfer\MerchantQueryResult.cs" />
+    <Compile Include="Model\Transfer\MerchantTransfer.cs" />
+    <Compile Include="Model\Transfer\MerchantTransferResult.cs" />
+    <Compile Include="Model\Transfer\MerchantTransferUserType.cs" />
+    <Compile Include="Model\Transfer\TransferQuery.cs" />
+    <Compile Include="Model\Transfer\OrderTransfer.cs" />
+    <Compile Include="Model\Transfer\TransferQueryResult.cs" />
+    <Compile Include="Model\Transfer\OrderTransferResult.cs" />
+    <Compile Include="Model\Transfer\TransferStatus.cs" />
+    <Compile Include="Model\Transfer\TransferType.cs" />
+    <Compile Include="Model\User\UnBindCardResult.cs" />
+    <Compile Include="Model\User\Card.cs" />
+    <Compile Include="Model\User\QueryBindCardList.cs" />
+    <Compile Include="Model\User\QueryBindCardListResult.cs" />
+    <Compile Include="Model\User\QueryUserBalance.cs" />
+    <Compile Include="Model\User\QueryUserBalanceResult.cs" />
+    <Compile Include="Model\User\QueryUserInfo.cs" />
+    <Compile Include="Model\User\QueryUserInfoResult.cs" />
+    <Compile Include="Model\User\Register.cs" />
+    <Compile Include="Model\User\RegisterResult.cs" />
+    <Compile Include="Model\User\UnbindCard.cs" />
+    <Compile Include="Model\User\BindCard.cs" />
+    <Compile Include="Model\User\UserAuth.cs" />
+    <Compile Include="Model\User\UserAuthCredentials.cs" />
+    <Compile Include="Model\User\BindCardResult.cs" />
+    <Compile Include="Model\User\UserAuthResult.cs" />
+    <Compile Include="Model\User\UserCaState.cs" />
+    <Compile Include="Model\User\UserPswdReset.cs" />
+    <Compile Include="Model\User\UserPswdResetResult.cs" />
+    <Compile Include="Model\User\UserPswdVerify.cs" />
+    <Compile Include="Model\User\UserPswdVerifyResult.cs" />
+    <Compile Include="Model\User\UserState.cs" />
+    <Compile Include="Model\Withdraw\OrderWithdraw.cs" />
+    <Compile Include="Model\Withdraw\WithdrawQuery.cs" />
+    <Compile Include="Model\Withdraw\WithdrawQueryResult.cs" />
+    <Compile Include="Model\Withdraw\OrderWithdrawResult.cs" />
+    <Compile Include="Model\Withdraw\WithdrawStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Accounting\AccountingUtils.cs" />
+    <Compile Include="Utils\Divide\DivideUtils.cs" />
+    <Compile Include="Utils\JsonUtil.cs" />
+    <Compile Include="Utils\LedgerMerchant\LedgerMerchantUtils.cs" />
+    <Compile Include="Utils\Order\OrderUtils.cs" />
+    <Compile Include="Utils\Refund\RefundUtils.cs" />
+    <Compile Include="Utils\Transfer\TransferUtils.cs" />
+    <Compile Include="Utils\User\UserUtils.cs" />
+    <Compile Include="Utils\Withdraw\WithdrawUtils.cs" />
+    <Compile Include="Utils\YeePayAPI.cs" />
+    <Compile Include="Utils\YeePayConfig.cs" />
+    <Compile Include="Utils\YeePayUtils.cs" />
+    <Compile Include="yop.client\YopClient.cs" />
+    <Compile Include="yop.client\YopConfig.cs" />
+    <Compile Include="yop.client\YopConstants.cs" />
+    <Compile Include="yop.client\YopRequest.cs" />
+    <Compile Include="yop.client\YopResponse.cs" />
+    <Compile Include="yop.encrypt\AESEncrypter.cs" />
+    <Compile Include="yop.encrypt\BlowFish.cs" />
+    <Compile Include="yop.encrypt\Digest.cs" />
+    <Compile Include="yop.encrypt\YopSignUtils.cs" />
+    <Compile Include="yop.exception\YopClientException.cs" />
+    <Compile Include="yop.unmarshaller\YopMarshaller.cs" />
+    <Compile Include="yop.utils\Assert.cs" />
+    <Compile Include="yop.utils\HttpUtils.cs" />
+    <Compile Include="yop.utils\RegexUtil.cs" />
+    <Compile Include="yop.utils\UploadFile.cs" />
+    <Compile Include="yop.utils\UUIDGenerator.cs" />
+    <Compile Include="yop\ErrorCode.cs" />
+    <Compile Include="yop\Region.cs" />
+    <Compile Include="yop\YopErrorResponse.cs" />
+    <Compile Include="yop\YopResponseMetadata.cs" />
+    <Compile Include="yop\YopServiceException.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
